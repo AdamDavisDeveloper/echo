@@ -27,6 +27,7 @@ const currentMonth = getCurrentMonth();
 const currentDay = getCurrentDay();
 const currentDate = `${currentYear}-${currentMonth}-${currentDay}`;
 //last/next year
+// eslint-disable-next-line
 const nextYear = `${currentYear - 1}-${currentMonth}-${currentDay}`;
 const lastYear = `${currentYear + 1}-${currentMonth}-${currentDay}`;
 
