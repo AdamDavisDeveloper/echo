@@ -4,7 +4,9 @@ import { popularGamesURL } from "../api";
 //Action Creator
 export const loadGames = () => async (dispatch) => {
   //Fetch via Axios
-  const popularData = await axios.get(popularGamesURL());
+  const proxyURL = "https://thingproxy.freeboard.io/fetch/";
+  const url = popularGamesURL();
+  const popularData = await axios.get(proxyURL + url);
   dispatch({
     type: "FETCH_GAMES",
     payload: {
